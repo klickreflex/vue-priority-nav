@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <priority-nav :options="{ navDropdownLabel: 'SHOW ME MORE!' }">
+      <ul style="display: inline-block;">
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Haha</li>
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Foo</li>
+        <li>Foo</li>
+      </ul>
+    </priority-nav>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PriorityNav from './components/priority-nav.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    PriorityNav,
   }
 }
 </script>
